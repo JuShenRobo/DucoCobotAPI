@@ -1,0 +1,5 @@
+<launch>
+    <node name="planner_node" pkg="lss_2" type="plan_2.py" output="screen"/>
+    <node name="navigation_node" pkg="lss_2" type="nav.py" output="screen"/>
+    <node name="grasping_node" pkg="lss_2" type="grasp.py" output="screen"/> 
+</launch>

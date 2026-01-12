@@ -1,0 +1,9 @@
+<!-- robot_system.launch -->
+<!-- roslaunch your_package robot_system.launch -->
+<!-- 启动文件（launch file）用于启动多个节点，并配置它们的参数。启动文件使用XML格式描述各个节点及其配置 -->
+<!-- 设置为 screen 表示将节点的日志输出到终端屏幕上。另一种常见的选项是 log，它会将输出保存到日志文件中。 -->
+<!-- catkin_create_pkg your_package std_msgs rospy roscpp 第一个是命令，这将创建一个名为 your_package 的包，并配置其依赖项。-->
+<launch>
+    <node name="navigation_node" pkg="lss_2" type="nav.py" output="screen"/>
+    <!-- <node name="grasping_node" pkg="lss_2" type="grasp.py" output="screen"/> -->
+</launch>
